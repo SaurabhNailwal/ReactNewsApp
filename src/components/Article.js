@@ -4,7 +4,6 @@ import moment from 'moment';
 import { Card, Text, Divider } from 'react-native-elements';
 
 export default class Article extends React.Component {
-
    render() {
      const {
          title,
@@ -18,7 +17,7 @@ export default class Article extends React.Component {
      const { noteStyle, featuredTitleStyle } = styles;
 
      const time = moment(publishedAt || moment.now()).fromNow();
-     
+
      const defaultImg =
        'https://wallpaper.wiki/wp-content/uploads/2017/04/wallpaper.wiki-Images-Abstract-digital-art-venice-canal-PIC-WPD008855-1024x640.jpg';
 
