@@ -14,8 +14,11 @@ export default class Article extends React.Component {
          urlToImage,
          url
      } = this.props.article;
+
      const { noteStyle, featuredTitleStyle } = styles;
+
      const time = moment(publishedAt || moment.now()).fromNow();
+     
      const defaultImg =
        'https://wallpaper.wiki/wp-content/uploads/2017/04/wallpaper.wiki-Images-Abstract-digital-art-venice-canal-PIC-WPD008855-1024x640.jpg';
 
